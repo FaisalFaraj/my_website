@@ -1,0 +1,64 @@
+name: my_portfolio
+description: Personal Portfolio
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+scripts:
+  build: flutter build web --web-renderer html --no-tree-shake-icons
+
+environment:
+  sdk: ">=2.17.6 <4.0.0"
+
+dependencies:
+  animated_text_kit: ^4.2.1
+  carousel_slider: ^4.0.0
+  connectivity_plus: ^4.0.1
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_svg: ^2.0.6
+  http: ^1.0.0
+  provider: ^6.0.1
+  scrollable_positioned_list: ^0.3.5
+  sizer: ^2.0.15
+  universal_html: ^2.0.4
+  url_launcher: ^6.1.2
+  url_strategy: ^0.2.0
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+   
+
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/poppins/Poppins-Regular.ttf
+  #       - asset: assets/fonts/poppins/Poppins-Light.ttf
+  #       - asset: assets/fonts/poppins/Poppins-Bold.ttf
+  #         weight: 900
+  #       - asset: assets/fonts/poppins/Poppins-Medium.ttf
+  #         weight: 300
+  #       - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/poppins/Poppins-Italic.ttf
+  #         style: italic
+
+
+flutter_launcher_icons:
+  web:
+    generate: true
+    image_path: "path/to/image.png"
+   
