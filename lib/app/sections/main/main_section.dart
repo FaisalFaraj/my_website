@@ -103,8 +103,7 @@ class MainPage extends StatelessWidget {
                     height: height,
                     alignment: Alignment.topCenter,
                     fit: BoxFit.cover,
-                    image: NetworkImage(
-                        'https://i.ibb.co/26k4d9p/background-image.jpg'),
+                    image: AssetImage('assets/images/background_image.jpg'),
                     placeholder:
                         AssetImage('assets/images/error_placeholder.png'),
                     imageErrorBuilder: (context, error, stackTrace) {

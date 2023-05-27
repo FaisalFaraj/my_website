@@ -26,7 +26,8 @@ Map<String, List<ProjectUtils>> projectUtils = {
       links: 'https://lavander-footprint.web.app',
     ),
     ProjectUtils(
-      banners: 'https://i.ibb.co/jVBGqVL/1.png',
+      banners:
+          'https://i.ibb.co/xM9sZkY/flutter-instgram-clone-feature-graphic.png',
       icons: 'https://i.ibb.co/ccPYXrc/flutter.png',
       titles: 'Flutter Instagram Clone',
       description:

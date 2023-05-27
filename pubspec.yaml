@@ -6,7 +6,7 @@ publish_to: "none"
 version: 1.0.0+1
 
 scripts:
-  build: flutter build web --web-renderer html --no-tree-shake-icons
+  build: flutter build web --web-renderer html --no-tree-shake-icons 
 
 environment:
   sdk: ">=2.17.6 <4.0.0"
@@ -60,5 +60,5 @@ flutter:
 flutter_launcher_icons:
   web:
     generate: true
-    image_path: "path/to/image.png"
+    image_path: "assets/images/app_icon.png"
    
