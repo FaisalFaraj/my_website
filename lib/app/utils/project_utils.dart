@@ -18,6 +18,14 @@ class ProjectUtils {
 Map<String, List<ProjectUtils>> projectUtils = {
   'Mobile': [
     ProjectUtils(
+      banners: 'https://i.ibb.co/dMxRXQX/arrio-feature-graphic.jpg',
+      icons: 'https://i.ibb.co/ccPYXrc/flutter.png',
+      titles: 'Arrivo',
+      description:
+          'Arrivo is a ride-hailing app that connects riders to drivers in Libya. The app is similar to Uber, but it is specifically designed for the Libyan market. Arrivo offers a safe and convenient way for people to get around Libya, and it is a great option for both locals and tourists. Arrivo is available in all major cities in Libya, and it is constantly expanding to new areas.(in progress)',
+      links: '',
+    ),
+    ProjectUtils(
       banners: 'https://i.ibb.co/JvwJHYj/5.png',
       icons: 'https://i.ibb.co/ccPYXrc/flutter.png',
       titles: 'Saheem',
