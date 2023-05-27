@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/app/utils/project_utils.dart';
+import 'package:my_portfolio/app/widgets/color_chage_btn.dart';
 import 'package:my_portfolio/app/widgets/custom_text_heading.dart';
 import 'package:my_portfolio/changes/links.dart';
 import 'package:my_portfolio/changes/strings.dart';
@@ -8,6 +9,7 @@ import 'package:my_portfolio/core/util/constants.dart';
 import 'package:sizer/sizer.dart';
 
 import 'widgets/project_card.dart';
+import 'widgets/projects_widget.dart';
 
 class PortfolioDesktop extends StatefulWidget {
   const PortfolioDesktop({Key? key}) : super(key: key);
@@ -27,19 +29,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
           const CustomSectionHeading(text: "\nProjects"),
           Space.y(1.w)!,
           CustomSectionSubHeading(text: portfolioSubHeading),
-          Space.y(2.w)!,
-          Wrap(
-            alignment: WrapAlignment.start,
-            crossAxisAlignment: WrapCrossAlignment.start,
-            runSpacing: 3.w,
-            children: projectUtils
-                .asMap()
-                .entries
-                .map(
-                  (e) => ProjectCard(project: e.value),
-                )
-                .toList(),
-          ),
+          ProjectsWidget(),
           Space.y(3.w)!,
           OutlinedButton(
             onPressed: () => openURL(gitHub),

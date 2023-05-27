@@ -78,7 +78,7 @@ class ProjectCardState extends State<ProjectCard> {
                     widget.project.description,
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 2.5.sp,
+                      fontSize: 12,
                       color: isHover ? whiteColor : theme.textColor,
                     ),
                   ),

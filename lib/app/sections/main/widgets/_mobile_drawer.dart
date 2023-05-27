@@ -64,6 +64,8 @@ class _MobileDrawer extends StatelessWidget {
                       ),
                   Space.y(5.w)!,
                   ColorChageButton(
+                    height: 65,
+                    width: 250,
                     text: 'RESUME',
                     onTap: () {
                       openURL(resume);
