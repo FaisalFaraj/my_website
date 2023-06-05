@@ -88,13 +88,12 @@ Map<String, List<ProjectUtils>> projectUtils = {
     ),
   ],
   'UI/UX': [
-    //<a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     ProjectUtils(
-      banners: 'https://i.ibb.co/BNPHvCd/2.png',
-      icons: 'https://i.ibb.co/k3ctxg1/python.png',
-      titles: 'Advanced POS(Face Recognition & QRcode system)',
+      banners: 'https://i.ibb.co/dMxRXQX/arrio-feature-graphic.jpg',
+      icons: 'https://i.ibb.co/ccPYXrc/flutter.png',
+      titles: 'Arrivo',
       description:
-          'Point-Of-Sales system using Python, creating a GUI using Tkinter that allowed to manage inventory & staff,enhanced security & accessibility features with QRCode Menu & face recognition systems.  (To purchase contact)',
+          'Arrivo is a ride-hailing app that connects riders to drivers in Libya. The app is similar to Uber, but it is specifically designed for the Libyan market. Arrivo offers a safe and convenient way for people to get around Libya, and it is a great option for both locals and tourists. Arrivo is available in all major cities in Libya, and it is constantly expanding to new areas.(in progress)',
       links: '',
     ),
   ],

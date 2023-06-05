@@ -96,22 +96,15 @@ class MainPage extends StatelessWidget {
               ),
               if (!state.isDarkThemeOn)
                 Align(
-                  alignment: Alignment.center,
-                  // BG01.png
-                  child: FadeInImage(
-                    width: width,
-                    height: height,
-                    alignment: Alignment.topCenter,
-                    fit: BoxFit.cover,
-                    image: AssetImage('assets/images/background_image.jpg'),
-                    placeholder:
-                        AssetImage('assets/images/error_placeholder.png'),
-                    imageErrorBuilder: (context, error, stackTrace) {
-                      return Center(
-                          child: Image.asset('assets/images/placeholder.gif'));
-                    },
-                  ),
-                ),
+                    alignment: Alignment.center,
+                    // BG01.png
+                    child: Image.asset(
+                      'assets/images/background_image.jpg',
+                      width: width,
+                      height: height,
+                      alignment: Alignment.topCenter,
+                      fit: BoxFit.cover,
+                    )),
               _Body(),
               const ArrowOnTop()
             ],
