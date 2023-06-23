@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/app/widgets/custom_outline.dart';
 import 'package:my_portfolio/core/theme/app_theme.dart';
+import 'package:my_portfolio/features/presentation/widgets/custom_outline.dart';
+import 'package:screentasia/screentasia.dart';
 
 class ZoomAnimations extends StatefulWidget {
   const ZoomAnimations({Key? key}) : super(key: key);
@@ -56,20 +57,19 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     var theme = Theme.of(context);
 
     return SizedBox(
-      width: size.width / 4,
-      height: size.width / 4,
+      width: 300.w,
+      height: 300.h,
       child: AlignTransition(
         alignment: _alignAnimation,
         child: CustomOutline(
-          strokeWidth: 5,
-          radius: size.width * 0.2,
-          padding: const EdgeInsets.all(5),
-          width: size.width * sizeAnimation.value,
-          height: size.width * sizeAnimation.value,
+          strokeWidth: 5.w,
+          radius: 500.r,
+          padding: const EdgeInsets.all(5).r,
+          width: 1000.w * sizeAnimation.value,
+          height: 1000.h * sizeAnimation.value,
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

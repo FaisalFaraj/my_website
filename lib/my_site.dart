@@ -7,7 +7,7 @@ import 'package:my_portfolio/core/providers/scroll_provider.dart';
 import 'package:my_portfolio/core/theme/cubit/theme_cubit.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sizer/sizer.dart';
+import 'package:screentasia/screentasia.dart';
 
 class MyPortfolio extends StatelessWidget {
   const MyPortfolio({Key? key}) : super(key: key);
@@ -25,15 +25,18 @@ class MyPortfolio extends StatelessWidget {
           ChangeNotifierProvider(create: (_) => ScrollProvider()),
         ],
         child: BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
-          return Sizer(builder: (context, orientation, deviceType) {
-            return MaterialApp(
-              debugShowCheckedModeBanner: false,
-              title: 'Faisal',
-              theme: AppTheme.themeData(state.isDarkThemeOn, context),
-              initialRoute: "/",
-              routes: {"/": (context) => const NChecking()},
-            );
-          });
+          return ScreentasiaInit(
+              adaptiveFrom: AdaptiveFrom.desktop,
+              adaptivePercentage: AdaptivePercentage(mobile: 220),
+              builder: (context, child) {
+                return MaterialApp(
+                  debugShowCheckedModeBanner: false,
+                  title: 'Faisal',
+                  theme: AppTheme.themeData(state.isDarkThemeOn, context),
+                  initialRoute: "/",
+                  routes: {"/": (context) => const NChecking()},
+                );
+              });
         }),
       ),
     );
