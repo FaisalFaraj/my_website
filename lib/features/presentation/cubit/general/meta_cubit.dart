@@ -4,21 +4,20 @@ import 'package:my_portfolio/features/data/models/meta.dart';
 import 'package:my_portfolio/features/data/models/projects.dart';
 import 'package:my_portfolio/features/domain/repositories/general_repository/general_repository.dart';
 
-part 'general_state.dart';
+part 'meta_state.dart';
 
-class GeneralCubit extends Cubit<GeneralState> {
-  GeneralCubit() : super(InitialState()) {
+class MetaCubit extends Cubit<MetaState> {
+  MetaCubit() : super(InitialState()) {
     fetch();
   }
 
   Future<void> fetch() async {
     try {
       emit(LoadingState());
-      Projects projects = await GeneralRepository().fetchProjectsList();
 
       Meta meta = await GeneralRepository().fetchMeta();
 
-      emit(LoadedState(meta, projects));
+      emit(LoadedState(meta));
     } catch (e) {
       emit(ErrorState());
     }

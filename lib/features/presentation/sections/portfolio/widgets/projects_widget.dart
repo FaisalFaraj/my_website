@@ -1,8 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_portfolio/features/data/models/projects.dart';
-import 'package:my_portfolio/features/domain/repositories/general_repository/general_repository.dart';
-import 'package:my_portfolio/features/presentation/cubit/general/general_cubit.dart';
+import 'package:my_portfolio/features/presentation/cubit/projects/projects_cubit.dart';
 
 import 'package:my_portfolio/features/presentation/sections/portfolio/widgets/project_card.dart';
 import 'package:my_portfolio/features/presentation/widgets/color_chage_btn.dart';
@@ -19,10 +18,11 @@ class ProjectsWidget extends StatefulWidget {
 
 class _ProjectsWidgetState extends State<ProjectsWidget> {
   var selected_group;
+  Projects? projects;
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<GeneralCubit, GeneralState>(
+    return BlocBuilder<ProjectsCubit, ProjectsState>(
       builder: (context, state) {
         if (state is LoadingState) {
           return const Center(child: CircularProgressIndicator());
@@ -31,9 +31,9 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
             child: Icon(Icons.close),
           );
         } else if (state is LoadedState) {
-          final projects = state.projects;
-          selected_group == null ? projects.mobile : selected_group;
-          //TODO
+          projects = state.projects;
+          selected_group = state.selected_projects;
+
           return Padding(
             padding:
                 EdgeInsets.symmetric(horizontal: 30.w.ap(), vertical: 20.h),
@@ -51,9 +51,9 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
                               const AdaptivePercentage(mobile: 140)),
                       text: 'Mobile',
                       onTap: () {
-                        setState(() {
-                          selected_group = projects.mobile;
-                        });
+                        context
+                            .read<ProjectsCubit>()
+                            .fetch_selected(projects!.mobile);
                       },
                     ),
                     ColorChageButton(
@@ -64,9 +64,9 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
                               const AdaptivePercentage(mobile: 140)),
                       text: 'UI/UX',
                       onTap: () {
-                        setState(() {
-                          selected_group = projects.uiUx;
-                        });
+                        context
+                            .read<ProjectsCubit>()
+                            .fetch_selected(projects!.uiUx);
                       },
                     ),
                     ColorChageButton(
@@ -77,9 +77,9 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
                               const AdaptivePercentage(mobile: 140)),
                       text: 'Web',
                       onTap: () {
-                        setState(() {
-                          selected_group = projects.web;
-                        });
+                        context
+                            .read<ProjectsCubit>()
+                            .fetch_selected(projects!.web);
                       },
                     ),
                     ColorChageButton(
@@ -89,10 +89,10 @@ class _ProjectsWidgetState extends State<ProjectsWidget> {
                           adaptivePercentage:
                               const AdaptivePercentage(mobile: 140)),
                       text: 'Desktop',
-                      onTap: () {
-                        setState(() {
-                          selected_group = projects.desktop;
-                        });
+                      onTap: () async {
+                        await context
+                            .read<ProjectsCubit>()
+                            .fetch_selected(projects!.desktop);
                       },
                     ),
                   ],
