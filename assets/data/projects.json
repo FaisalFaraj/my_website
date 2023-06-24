@@ -1,0 +1,75 @@
+{
+   
+        "mobile": [
+            {
+                "banners": "https://drive.google.com/file/d/1KrNO0779w_b571ysN-4enphUbPxaoafA/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "Arrivo",
+                "description": "Arrivo is a ride-hailing app that connects riders to drivers in Libya. The app is similar to Uber, but it is specifically designed for the Libyan market. Arrivo offers a safe and convenient way for people to get around Libya, and it is a great option for both locals and tourists. Arrivo is available in all major cities in Libya, and it is constantly expanding to new areas.(in progress)",
+                "links": ""
+            },
+            {
+                "banners": "https://drive.google.com/file/d/1L8bn3oYWI12fxGQCi8y-CISJwVYhbizk/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "Saheem",
+                "description": "Saheem application and site seeks to establish charitable campaigns, to be digital gateway for charitable campaigns",
+                "links": "https:lavander-footprint.web.app"
+            },
+            {
+                "banners": "https://drive.google.com/file/d/1tNGDeTZmAXbUsm_9OM04DkubQ1BdWRnc/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "Flutter Instagram Clone",
+                "description": "Flutter Instgram Clone is a fully functional Instagram clone built with Flutter. It has a modern design and improved performance, making it a great choice for developers who want to create a social media app.",
+                "links": "https:github.com/FaisalFaraj/Flutter-Instagram-Clone"
+            },
+            {
+                "banners": "https://drive.google.com/file/d/1kgLdr0yLPo3NCeln2LWSYaJlSicdKsIk/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "Movie App",
+                "description": "Amazing modren movie App developed using flutter, source code is also available, check below.",
+                "links": "https:github.com/FaisalFaraj/MovieAppFlutter"
+            }
+        ],
+        "web": [
+            {
+                "banners": "https://drive.google.com/file/d/1L8bn3oYWI12fxGQCi8y-CISJwVYhbizk/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "Saheem",
+                "description": "Saheem application and site seeks to establish charitable campaigns, to be digital gateway for charitable campaigns",
+                "links": "https:lavander-footprint.web.app"
+            },
+            {
+                "banners": "https://drive.google.com/file/d/1QL9rAJ7oOekVZ8_Z-H7kJD4oQyu2aKbJ/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "My Portfolio",
+                "description": "Modern Portfolio with Responsive Design",
+                "links": "https:github.com/FaisalFaraj/My-Portfolio"
+            }
+        ],
+        "Desktop": [
+            {
+                "banners": "https://drive.google.com/file/d/16p88-1nSMqcN9ePk-F99rtAtQQRIM8Ko/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/14qrNj_ihm419Wj_F-_sG5cvvMO-cu0Ge/view?usp=sharing",
+                "titles": "Advanced POS(Face Recognition & QRcode system)",
+                "description": "Point-Of-Sales system using Python, creating a GUI using Tkinter that allowed to manage inventory & staff,enhanced security & accessibility features with QRCode Menu & face recognition systems.  (To purchase contact)",
+                "links": ""
+            },
+            {
+                "banners": "https://drive.google.com/file/d/1F1ONWVAFMt9YDnZ5NCeU2k4S5IrdB5Z_/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/14qrNj_ihm419Wj_F-_sG5cvvMO-cu0Ge/view?usp=sharing",
+                "titles": "Launcher - School Exam System,Screen Share,Telegram Bot",
+                "description": "An application to take exams, share the teacher's screen, and record attendance all without the Internet, using flask (localhost) with Telegram Bot for messaging  and Screen Recorder using ffmpeg. (To purchase contact)",
+                "links": ""
+            }
+        ],
+        "UI_UX": [
+            {
+                "banners": "https://drive.google.com/file/d/1KrNO0779w_b571ysN-4enphUbPxaoafA/view?usp=sharing",
+                "icons": "https://drive.google.com/file/d/1l_pbZ45RSsGdnLQtVK0xbTbfD_3tW9QX/view?usp=sharing",
+                "titles": "Arrivo",
+                "description": "Arrivo is a ride-hailing app that connects riders to drivers in Libya. The app is similar to Uber, but it is specifically designed for the Libyan market. Arrivo offers a safe and convenient way for people to get around Libya, and it is a great option for both locals and tourists. Arrivo is available in all major cities in Libya, and it is constantly expanding to new areas.(in progress)",
+                "links": ""
+            }
+        ]
+    
+}

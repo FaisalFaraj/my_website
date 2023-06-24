@@ -1,7 +1,7 @@
 part of '../services.dart';
 
 class _ServiceCard extends StatefulWidget {
-  final ServicesUtils service;
+  final Services service;
 
   const _ServiceCard({Key? key, required this.service}) : super(key: key);
 
@@ -41,22 +41,22 @@ class _ServiceCardState extends State<_ServiceCard> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FadeInImage(
+            CachedNetworkImage(
+              imageUrl: HttpHelper.clean_drive_link(widget.service.icon!),
               height: 75.h,
               width: 75.w,
-              image: NetworkImage(widget.service.icon),
-              placeholder: AssetImage('assets/images/error_placeholder.png'),
-              imageErrorBuilder: (context, error, stackTrace) {
-                return Center(
-                    child: Image.asset('assets/images/placeholder.gif'));
-              },
               fit: BoxFit.contain,
+              placeholder: (context, url) => Center(
+                  child: Image.asset('assets/images/error_placeholder.png')),
+              errorWidget: (context, url, error) =>
+                  Center(child: Image.asset('assets/images/placeholder.gif')),
             ),
+
             SizedBox(
               height: 20.h,
             ),
             // Space.y(3.w)!,
-            Text(widget.service.name,
+            Text(widget.service.name!,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: isHover ? whiteColor : theme.textColor,
@@ -65,7 +65,7 @@ class _ServiceCardState extends State<_ServiceCard> {
               height: 10.h,
             ),
             Text(
-              widget.service.description,
+              widget.service.description!,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: isHover ? whiteColor.withOpacity(0.8) : theme.textColor,
@@ -79,7 +79,7 @@ class _ServiceCardState extends State<_ServiceCard> {
 
             Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: widget.service.tool
+                children: widget.service.tool!
                     .map((e) => Row(
                           children: [
                             Text(

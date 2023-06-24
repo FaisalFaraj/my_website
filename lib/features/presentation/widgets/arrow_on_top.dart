@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/animations/entrance_fader.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';

@@ -6,12 +6,12 @@ import 'package:my_portfolio/features/presentation/sections/services/services.da
 import 'package:my_portfolio/features/presentation/widgets/footer.dart';
 
 class BodyUtils {
-  static const List<Widget> views = [
-    HomePage(),
+  static List<Widget> views = [
+    const HomePage(),
     // About(),
-    Services(),
-    Portfolio(),
-    Contact(),
-    Footer(),
+    ServicesSection(),
+    const Portfolio(),
+    const ContactSection(),
+    const Footer(),
   ];
 }

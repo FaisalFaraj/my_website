@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/configs/connection/bloc/connected_bloc.dart';
 import 'package:my_portfolio/core/configs/connection/network_check.dart';
 import 'package:my_portfolio/core/providers/drawer_provider.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';
 import 'package:my_portfolio/core/theme/cubit/theme_cubit.dart';
+import 'package:my_portfolio/features/presentation/cubit/general/general_cubit.dart';
+import 'package:my_portfolio/features/presentation/cubit/general/general_cubit.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:screentasia/screentasia.dart';
@@ -18,6 +19,7 @@ class MyPortfolio extends StatelessWidget {
       providers: [
         BlocProvider<ThemeCubit>(create: (_) => ThemeCubit()),
         BlocProvider<ConnectedBloc>(create: (context) => ConnectedBloc()),
+        BlocProvider<GeneralCubit>(create: (context) => GeneralCubit()),
       ],
       child: MultiProvider(
         providers: [
@@ -27,7 +29,7 @@ class MyPortfolio extends StatelessWidget {
         child: BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
           return ScreentasiaInit(
               adaptiveFrom: AdaptiveFrom.desktop,
-              adaptivePercentage: AdaptivePercentage(mobile: 220),
+              adaptivePercentage: const AdaptivePercentage(mobile: 220),
               builder: (context, child) {
                 return MaterialApp(
                   debugShowCheckedModeBanner: false,

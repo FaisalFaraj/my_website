@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:my_portfolio/core/constant/img.dart';
 import 'package:my_portfolio/core/theme/app_theme.dart';
+import 'package:my_portfolio/core/util/http_helper.dart';
 import 'package:my_portfolio/features/presentation/widgets/custom_outline.dart';
 import 'package:screentasia/screentasia.dart';
 
@@ -85,20 +86,17 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
                 0.6,
                 1
               ]),
-          child: Container(),
-          // child:
-
-          // Container(
-          //   decoration: BoxDecoration(
-          //     shape: BoxShape.circle,
-          //     color: Colors.black.withOpacity(0.8),
-          //     image: const DecorationImage(
-          //       fit: BoxFit.cover,
-          //       alignment: Alignment.bottomLeft,
-          //       image: AssetImage('assets/imgs/my_image.png'),
-          //     ),
-          //   ),
-          // ),
+          child: Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.black.withOpacity(0.8),
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  alignment: Alignment.bottomLeft,
+                  image: NetworkImage(
+                      HttpHelper.clean_drive_link(StaticImage.profile_image))),
+            ),
+          ),
         ),
       ),
     );

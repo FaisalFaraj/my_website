@@ -6,7 +6,7 @@ class _Body extends StatelessWidget {
     final scrollProvider = Provider.of<ScrollProvider>(context);
 
     return Padding(
-      padding: EdgeInsetsDirectional.only(top: 80),
+      padding: const EdgeInsetsDirectional.only(top: 80),
       child: ScrollablePositionedList.separated(
         padding: EdgeInsets.symmetric(horizontal: 130.w.ap()),
         separatorBuilder: (context, index) {

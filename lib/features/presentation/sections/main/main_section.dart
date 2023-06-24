@@ -1,12 +1,12 @@
 import 'dart:ui';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_portfolio/core/changes/links.dart';
+import 'package:my_portfolio/core/constant/img.dart';
+import 'package:my_portfolio/core/constant/links.dart';
 
 import 'package:my_portfolio/core/configs/app.dart';
 import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
-import 'package:my_portfolio/core/constant/links.dart';
 import 'package:my_portfolio/core/providers/drawer_provider.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';
 
@@ -21,7 +21,6 @@ import 'package:my_portfolio/features/presentation/widgets/navbar_logo.dart';
 import 'package:provider/provider.dart';
 import 'package:screentasia/screentasia.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/util/constants.dart';
 part 'widgets/_navbar_desktop.dart';
 part 'widgets/_mobile_drawer.dart';
@@ -38,9 +37,9 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       key: drawerProvider.key,
       extendBodyBehindAppBar: true,
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(130),
-        child: const Responsive(
+        child: Responsive(
           desktop: _NavbarDesktop(),
           mobile: _NavBarTablet(),
           tablet: _NavBarTablet(),

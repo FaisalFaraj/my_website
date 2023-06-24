@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
-import 'package:my_portfolio/core/res/responsive.dart';
 import 'package:my_portfolio/core/util/constants.dart';
-import 'package:my_portfolio/features/presentation/utils/project_utils.dart';
+import 'package:my_portfolio/core/util/http_helper.dart';
 import 'package:screentasia/screentasia.dart';
 
 class ProjectCard extends StatefulWidget {
-  final ProjectUtils project;
+  final project;
 
   const ProjectCard({Key? key, required this.project}) : super(key: key);
   @override
@@ -50,18 +49,15 @@ class ProjectCardState extends State<ProjectCard> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FadeInImage(
+                  CachedNetworkImage(
+                    imageUrl: HttpHelper.clean_drive_link(widget.project.icons),
                     height: 45.h,
-                    image: NetworkImage(
-                      widget.project.icons,
-                    ),
-                    placeholder:
-                        AssetImage('assets/images/error_placeholder.png'),
-                    imageErrorBuilder: (context, error, stackTrace) {
-                      return Center(
-                          child: Image.asset('assets/images/placeholder.gif'));
-                    },
                     fit: BoxFit.cover,
+                    placeholder: (context, url) => Center(
+                        child:
+                            Image.asset('assets/images/error_placeholder.png')),
+                    errorWidget: (context, url, error) => Center(
+                        child: Image.asset('assets/images/placeholder.gif')),
                   ),
                   SizedBox(height: 20.h),
                   Text(
@@ -88,20 +84,41 @@ class ProjectCardState extends State<ProjectCard> {
             AnimatedOpacity(
               duration: const Duration(milliseconds: 400),
               opacity: isHover ? 0.1 : 1.0,
-              child: Container(
-                width: 30.w,
+              child:
+                  // FadeInImage(
+                  //   height: 36.h,
+                  //   width: 30.w,
+                  //   fit: BoxFit.cover,
+                  //   image: NetworkImage(widget.project.banners),
+                  //   placeholder:
+                  //       AssetImage('assets/images/error_placeholder.png'),
+                  //   imageErrorBuilder: (context, error, stackTrace) {
+                  //     return Center(
+                  //       child: Image.asset('assets/images/placeholder.gif',
+                  //           fit: BoxFit.fitWidth),
+                  //     );
+                  //   },
+                  // )
+                  //  Image.network(widget.project.banners,
+                  //     height: 36.h,
+                  //     width: 30.w,
+                  //     fit: BoxFit.cover,
+                  //     loadingBuilder: (context, child, loadingProgress) => Center(
+                  //         child:
+                  //             Image.asset('assets/images/error_placeholder.png')),
+                  //     errorBuilder: (context, error, stackTrace) => Center(
+
+                  //         child: Image.asset('assets/images/placeholder.gif'))),
+
+                  CachedNetworkImage(
+                imageUrl: HttpHelper.clean_drive_link(widget.project.banners),
                 height: 36.h,
-                child: FadeInImage(
-                  height: 36.h,
-                  image: NetworkImage(widget.project.banners),
-                  placeholder:
-                      AssetImage('assets/images/error_placeholder.png'),
-                  imageErrorBuilder: (context, error, stackTrace) {
-                    return Center(
-                        child: Image.asset('assets/images/placeholder.gif'));
-                  },
-                  fit: BoxFit.cover,
-                ),
+                width: 30.w,
+                fit: BoxFit.cover,
+                placeholder: (context, url) => Center(
+                    child: Image.asset('assets/images/error_placeholder.png')),
+                errorWidget: (context, url, error) =>
+                    Center(child: Image.asset('assets/images/placeholder.gif')),
               ),
             ),
           ],

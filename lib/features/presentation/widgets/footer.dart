@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/core/changes/links.dart';
+import 'package:my_portfolio/core/constant/links.dart';
 import 'package:my_portfolio/core/util/constants.dart';
 
 class Footer extends StatelessWidget {

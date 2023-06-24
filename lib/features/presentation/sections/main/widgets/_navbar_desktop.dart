@@ -32,7 +32,9 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
                   context.read<ThemeCubit>().updateTheme(!state.isDarkThemeOn);
                 },
                 child: Image.network(
-                  state.isDarkThemeOn ? IconUrls.darkIcon : IconUrls.lightIcon,
+                  state.isDarkThemeOn
+                      ? StaticImage.darkIcon
+                      : StaticImage.lightIcon,
                   height: 30.h,
                   width: 30.w,
                   color: state.isDarkThemeOn ? Colors.black : Colors.white,

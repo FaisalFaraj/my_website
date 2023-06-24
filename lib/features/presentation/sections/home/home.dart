@@ -1,15 +1,14 @@
 import 'package:my_portfolio/core/animations/zoom_animation.dart';
-import 'package:my_portfolio/core/changes/img.dart';
-import 'package:my_portfolio/core/changes/strings.dart';
-import 'package:my_portfolio/core/res/responsive_size.dart';
+import 'package:my_portfolio/core/constant/img.dart';
+import 'package:my_portfolio/core/constant/links.dart';
+import 'package:my_portfolio/core/constant/strings.dart';
+import 'package:my_portfolio/core/util/constants.dart';
 import 'package:my_portfolio/features/presentation/widgets/color_chage_btn.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter/material.dart';
 
 import 'package:my_portfolio/core/animations/entrance_fader.dart';
 import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:screentasia/screentasia.dart';
-
 import '../../../../core/res/responsive.dart';
 
 class HomePage extends StatelessWidget {
@@ -78,7 +77,7 @@ class HomePage extends StatelessWidget {
                         textStyle: AppText.h2!.copyWith(fontSize: 25.sp)),
                     TyperAnimatedText(animationtxt2,
                         speed: const Duration(milliseconds: 50),
-                        textStyle: AppText.h2!.copyWith(fontSize: 5.sp)),
+                        textStyle: AppText.h2!.copyWith(fontSize: 25.sp)),
                   ],
                 ),
               ],
@@ -86,7 +85,7 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            Container(
+            SizedBox(
               width: 400.w,
               height: 100.h,
               child: Text(miniDescription,
@@ -105,6 +104,7 @@ class HomePage extends StatelessWidget {
               fontSize: 15.sp,
               text: 'download cv',
               onTap: () {
+                openURL(resume);
                 // html.window.open(resume, "pdf");
               },
             ),

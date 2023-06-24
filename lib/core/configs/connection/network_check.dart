@@ -46,7 +46,7 @@ class NoConnectionErorr extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: const [
             // LoadingAnimationWidget.staggeredDotsWave(
             //     color: primaryColor, size: 50.0),
             // SizedBox(height: 3.h),

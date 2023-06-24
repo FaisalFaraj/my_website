@@ -69,7 +69,8 @@ class _MobileDrawer extends StatelessWidget {
                     height: 65.h,
                     width: 250.w,
                     fontSize: 50.sp.ap(
-                        adaptivePercentage: AdaptivePercentage(mobile: 100)),
+                        adaptivePercentage:
+                            const AdaptivePercentage(mobile: 100)),
                     text: 'RESUME',
                     onTap: () {
                       openURL(resume);

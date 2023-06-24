@@ -1,0 +1,63 @@
+{
+    "services": [
+        {
+            "name": "Android App Development",
+            "icon": "https://drive.google.com/file/d/1hvI4zlS5PXfnd_4iIkm9rAS4mM2SBpYo/view?usp=sharing",
+            "description": "Are you interested in the great Mobile app? Let's make it a reality.",
+            "tool": [
+                "Flutter",
+                "java",
+                "kotlin"
+            ]
+        },
+        {
+            "name": "iOS App Development",
+            "icon": "https://drive.google.com/file/d/1ys70z6-rrA8bXmWatTJVcf47rvaKkfpq/view?usp=sharing",
+            "description": "Are you interested in the great Mobile app? Let's make it a reality.",
+            "tool": [
+                "Flutter"
+            ]
+        },
+        {
+            "name": "Desktop App Development",
+            "icon": "https://drive.google.com/file/d/1sT9EOXU1SUbp-9fkfUgjOTaIQruHGPn8/view?usp=sharing",
+            "description": "Are you interested in the great Desktop app? Let's make it a reality.",
+            "tool": [
+                "Python",
+                "Flutter"
+            ]
+        },
+        {
+            "name": "Automation scripts (web scrapping,etc)",
+            "icon": "https://drive.google.com/file/d/12udJ-3iCs3H4RkJqNlZgwp7QaHTftsZP/view?usp=sharing",
+            "description": "Are you interested in the great automation technology? Let's make it a reality.",
+            "tool": [
+                "Python"
+            ]
+        },
+        {
+            "name": "UI/UX Designing",
+            "icon": "https://drive.google.com/file/d/1xdOTAsd2VZpaBA6ae5YGR4ZZq8p2XhlH/view?usp=sharing",
+            "description": "I'm creating elegant designs suited to your needs following core design theory. ",
+            "tool": [
+                "Figma"
+            ]
+        }
+    ],
+    "contacts": [
+        {
+            "url": "https://github.com/FaisalFaraj",
+            "icon": "https://img.icons8.com/ios-glyphs/60/000000/github.png"
+        },
+        {
+            "url": "https://web.facebook.com/faisal.boujaylah.5",
+            "icon": "https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+        },
+        {
+            "url": "https://api.whatsapp.com/send?phone=218920429383",
+            "icon": "https://img.icons8.com/material-outlined/48/000000/whatsapp.png"
+        }
+    ]
+,
+    "profile":"ddsdfsdfs"
+}

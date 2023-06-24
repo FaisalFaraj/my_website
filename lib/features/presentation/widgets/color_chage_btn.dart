@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
-import 'package:my_portfolio/core/res/responsive.dart';
 import 'package:screentasia/screentasia.dart';
 
 class ColorChageButton extends StatefulWidget {
