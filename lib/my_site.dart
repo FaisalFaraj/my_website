@@ -4,7 +4,7 @@ import 'package:my_portfolio/core/configs/connection/network_check.dart';
 import 'package:my_portfolio/core/providers/drawer_provider.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';
 import 'package:my_portfolio/core/theme/cubit/theme_cubit.dart';
-import 'package:my_portfolio/features/presentation/cubit/general/meta_cubit.dart';
+import 'package:my_portfolio/features/presentation/cubit/meta/meta_cubit.dart';
 import 'package:my_portfolio/features/presentation/cubit/projects/projects_cubit.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

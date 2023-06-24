@@ -8,7 +8,7 @@ import 'package:my_portfolio/core/util/constants.dart';
 import 'package:my_portfolio/core/util/http_helper.dart';
 import 'package:my_portfolio/features/data/models/meta.dart';
 import 'package:my_portfolio/features/domain/repositories/general_repository/general_repository.dart';
-import 'package:my_portfolio/features/presentation/cubit/general/meta_cubit.dart';
+import 'package:my_portfolio/features/presentation/cubit/meta/meta_cubit.dart';
 import 'package:my_portfolio/features/presentation/widgets/custom_text_heading.dart';
 import 'package:screentasia/screentasia.dart';
 
