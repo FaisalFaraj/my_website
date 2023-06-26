@@ -45,7 +45,8 @@ class ContactSection extends StatelessWidget {
                 height: 30.h,
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 40.h),
+                padding: EdgeInsets.symmetric(
+                    horizontal: 40.w.ap(), vertical: 40.h.ap()),
                 decoration: BoxDecoration(
                   gradient: theme.contactCard,
                   borderRadius: BorderRadius.circular(30).r,
@@ -65,7 +66,7 @@ class ContactSection extends StatelessWidget {
                               contactHeadding,
                               style: TextStyle(
                                 height: 1.2,
-                                fontSize: 30.sp.ap(),
+                                fontSize: 37.sp.ap(),
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -75,7 +76,7 @@ class ContactSection extends StatelessWidget {
                             Text(
                               contactSubHeadding,
                               style: TextStyle(
-                                fontSize: 16.sp.ap(),
+                                fontSize: 23.sp.ap(),
                                 fontWeight: FontWeight.w100,
                               ),
                             ),
@@ -97,7 +98,7 @@ class ContactSection extends StatelessWidget {
                             child: Text(
                               'Get Started',
                               style: TextStyle(
-                                fontSize: 20.sp.ap(),
+                                fontSize: 25.sp.ap(),
                                 fontWeight: FontWeight.w500,
                                 color: textColor,
                               ),
@@ -123,7 +124,7 @@ class ContactSection extends StatelessWidget {
                                   ),
                                   onPressed: () => openURL(e.url!),
                                   highlightColor: Colors.white54,
-                                  iconSize: 30.sp,
+                                  iconSize: 30.sp.ap(),
                                 ))
                             .toList()),
                   ],

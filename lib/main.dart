@@ -3,7 +3,6 @@ import 'my_site.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 //TODO add project preview
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 

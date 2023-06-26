@@ -66,9 +66,9 @@ class _MobileDrawer extends StatelessWidget {
                     height: 50.h.ap(),
                   ),
                   ColorChageButton(
-                    height: 65.h,
-                    width: 250.w,
-                    fontSize: 50.sp.ap(
+                    height: 95.h.ap(),
+                    width: 245.w.ap(),
+                    fontSize: 30.sp.ap(
                         adaptivePercentage:
                             const AdaptivePercentage(mobile: 100)),
                     text: 'RESUME',
