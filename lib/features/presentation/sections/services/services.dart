@@ -1,13 +1,13 @@
-import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:my_portfolio/core/constant/strings.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
 import 'package:my_portfolio/core/res/responsive.dart';
-import 'package:my_portfolio/core/configs/configs.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:my_portfolio/core/util/http_helper.dart';
 import 'package:my_portfolio/features/data/models/meta.dart';
 import 'package:my_portfolio/features/presentation/cubit/meta/meta_cubit.dart';
@@ -60,7 +60,7 @@ class ServicesSection extends StatelessWidget {
                           (BuildContext context, int itemIndex, int i) =>
                               Padding(
                         padding: EdgeInsets.symmetric(vertical: 0.5.w),
-                        child: _ServiceCard(service: services![i]),
+                        child: _ServiceCard(service: services[i]),
                       ),
                       options: CarouselOptions(
                         viewportFraction: 0.6,

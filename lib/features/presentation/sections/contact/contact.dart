@@ -1,19 +1,17 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_portfolio/core/constant/links.dart';
 import 'package:my_portfolio/core/constant/strings.dart';
 
-import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:my_portfolio/core/util/constants.dart';
-import 'package:my_portfolio/core/util/http_helper.dart';
-import 'package:my_portfolio/features/data/models/meta.dart';
-import 'package:my_portfolio/features/domain/repositories/general_repository/general_repository.dart';
 import 'package:my_portfolio/features/presentation/cubit/meta/meta_cubit.dart';
 import 'package:my_portfolio/features/presentation/widgets/custom_text_heading.dart';
 import 'package:screentasia/screentasia.dart';
 
 class ContactSection extends StatelessWidget {
-  const ContactSection({Key? key}) : super(key: key);
+  const ContactSection({super.key});
 
   @override
   Widget build(BuildContext context) {

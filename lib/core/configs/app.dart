@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'configs.dart';
+import 'package:my_portfolio/core/configs/others/app_typography.dart';
+import 'package:my_portfolio/core/configs/others/space.dart';
 
 class App {
   // static bool? isLtr;

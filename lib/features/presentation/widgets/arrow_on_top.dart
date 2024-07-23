@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/animations/entrance_fader.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';
@@ -5,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:screentasia/screentasia.dart';
 
 class ArrowOnTop extends StatefulWidget {
-  const ArrowOnTop({Key? key}) : super(key: key);
+  const ArrowOnTop({super.key});
 
   @override
   ArrowOnTopState createState() => ArrowOnTopState();

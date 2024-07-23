@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_portfolio/features/data/models/projects.dart';
 import 'package:my_portfolio/features/presentation/cubit/projects/projects_cubit.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:my_portfolio/core/configs/configs.dart';
 
+//
 class AppText {
   // static TextStyle? btn;
 

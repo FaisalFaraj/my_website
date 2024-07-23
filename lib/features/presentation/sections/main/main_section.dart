@@ -1,16 +1,18 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:my_portfolio/core/configs/others/space.dart';
 import 'package:my_portfolio/core/constant/img.dart';
 import 'package:my_portfolio/core/constant/links.dart';
 
 import 'package:my_portfolio/core/configs/app.dart';
-import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
 import 'package:my_portfolio/core/providers/drawer_provider.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';
 
 import 'package:my_portfolio/core/res/responsive.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:my_portfolio/core/theme/cubit/theme_cubit.dart';
 import 'package:my_portfolio/features/presentation/utils/navbar_utils.dart';
 import 'package:my_portfolio/features/presentation/utils/utils.dart';
@@ -27,7 +29,7 @@ part 'widgets/_mobile_drawer.dart';
 part 'widgets/_body.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {

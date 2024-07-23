@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/constant/img.dart';
 import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:my_portfolio/core/util/http_helper.dart';
@@ -5,7 +6,7 @@ import 'package:my_portfolio/features/presentation/widgets/custom_outline.dart';
 import 'package:screentasia/screentasia.dart';
 
 class ZoomAnimations extends StatefulWidget {
-  const ZoomAnimations({Key? key}) : super(key: key);
+  const ZoomAnimations({super.key});
 
   @override
   State<ZoomAnimations> createState() => _ZoomAnimationsState();

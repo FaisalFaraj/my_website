@@ -19,15 +19,15 @@ class Meta {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(services != null) {
-      _data["services"] = services?.map((e) => e.toJson()).toList();
+      data["services"] = services?.map((e) => e.toJson()).toList();
     }
     if(contacts != null) {
-      _data["contacts"] = contacts?.map((e) => e.toJson()).toList();
+      data["contacts"] = contacts?.map((e) => e.toJson()).toList();
     }
-    _data["profile"] = profile;
-    return _data;
+    data["profile"] = profile;
+    return data;
   }
 }
 
@@ -47,10 +47,10 @@ class Contacts {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["url"] = url;
-    _data["icon"] = icon;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["url"] = url;
+    data["icon"] = icon;
+    return data;
   }
 }
 
@@ -78,13 +78,13 @@ class Services {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["name"] = name;
-    _data["icon"] = icon;
-    _data["description"] = description;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["name"] = name;
+    data["icon"] = icon;
+    data["description"] = description;
     if(tool != null) {
-      _data["tool"] = tool;
+      data["tool"] = tool;
     }
-    return _data;
+    return data;
   }
 }

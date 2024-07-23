@@ -1,7 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
 
-import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:my_portfolio/core/util/constants.dart';
 import 'package:my_portfolio/core/util/http_helper.dart';
 import 'package:screentasia/screentasia.dart';
@@ -9,7 +10,7 @@ import 'package:screentasia/screentasia.dart';
 class ProjectCard extends StatefulWidget {
   final project;
 
-  const ProjectCard({Key? key, required this.project}) : super(key: key);
+  const ProjectCard({super.key, required this.project});
   @override
   ProjectCardState createState() => ProjectCardState();
 }

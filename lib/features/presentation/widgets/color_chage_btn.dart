@@ -1,5 +1,6 @@
-import 'package:my_portfolio/core/configs/configs.dart';
+import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:screentasia/screentasia.dart';
 
 class ColorChageButton extends StatefulWidget {
@@ -9,13 +10,12 @@ class ColorChageButton extends StatefulWidget {
   final double height;
   final double fontSize;
   const ColorChageButton(
-      {Key? key,
+      {super.key,
       required this.text,
       required this.onTap,
       required this.height,
       required this.width,
-      required this.fontSize})
-      : super(key: key);
+      required this.fontSize});
 
   @override
   State<ColorChageButton> createState() => _ColorChageButtonState();

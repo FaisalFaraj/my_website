@@ -1,8 +1,9 @@
-import 'package:my_portfolio/core/configs/configs.dart';
+import 'package:flutter/material.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:screentasia/screentasia.dart';
 
 class NavBarLogo extends StatelessWidget {
-  const NavBarLogo({Key? key}) : super(key: key);
+  const NavBarLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

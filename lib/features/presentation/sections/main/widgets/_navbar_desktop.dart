@@ -1,7 +1,7 @@
 part of '../main_section.dart';
 
 class _NavbarDesktop extends StatefulWidget {
-  const _NavbarDesktop({Key? key}) : super(key: key);
+  const _NavbarDesktop({super.key});
 
   @override
   State<_NavbarDesktop> createState() => _NavbarDesktopState();
@@ -48,7 +48,7 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
 }
 
 class _NavBarTablet extends StatelessWidget {
-  const _NavBarTablet({Key? key}) : super(key: key);
+  const _NavBarTablet({super.key});
 
   @override
   Widget build(BuildContext context) {

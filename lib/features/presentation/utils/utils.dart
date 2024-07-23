@@ -9,7 +9,7 @@ class BodyUtils {
   static List<Widget> views = [
     const HomePage(),
     // About(),
-    ServicesSection(),
+    const ServicesSection(),
     const Portfolio(),
     const ContactSection(),
     const Footer(),

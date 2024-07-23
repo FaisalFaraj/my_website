@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/constant/links.dart';
 import 'package:my_portfolio/core/constant/strings.dart';
 
@@ -8,7 +9,7 @@ import 'package:screentasia/screentasia.dart';
 import 'widgets/projects_widget.dart';
 
 class Portfolio extends StatelessWidget {
-  const Portfolio({Key? key}) : super(key: key);
+  const Portfolio({super.key});
 
   @override
   Widget build(BuildContext context) {

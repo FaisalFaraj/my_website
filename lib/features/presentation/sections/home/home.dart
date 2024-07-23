@@ -1,18 +1,20 @@
+import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/animations/zoom_animation.dart';
+import 'package:my_portfolio/core/configs/others/app_typography.dart';
 import 'package:my_portfolio/core/constant/img.dart';
 import 'package:my_portfolio/core/constant/links.dart';
 import 'package:my_portfolio/core/constant/strings.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:my_portfolio/core/util/constants.dart';
 import 'package:my_portfolio/features/presentation/widgets/color_chage_btn.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 import 'package:my_portfolio/core/animations/entrance_fader.dart';
-import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:screentasia/screentasia.dart';
 import '../../../../core/res/responsive.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

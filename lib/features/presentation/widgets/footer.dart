@@ -3,7 +3,7 @@ import 'package:my_portfolio/core/constant/links.dart';
 import 'package:my_portfolio/core/util/constants.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key? key}) : super(key: key);
+  const Footer({super.key});
 //TODO
   @override
   Widget build(BuildContext context) {

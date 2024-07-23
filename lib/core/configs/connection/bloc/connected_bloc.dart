@@ -17,9 +17,9 @@ class ConnectedBloc extends Bloc<ConnectedEvent, ConnectedState> {
 
     subscription = Connectivity()
         .onConnectivityChanged
-        .listen((ConnectivityResult result) {
-      if (result == ConnectivityResult.mobile ||
-          result == ConnectivityResult.wifi) {
+        .listen((List<ConnectivityResult> result) {
+      if (result.last == ConnectivityResult.mobile ||
+          result.last == ConnectivityResult.wifi) {
         add(OnConnectedEvent());
       } else {
         add(OnNotConnectedEvent());

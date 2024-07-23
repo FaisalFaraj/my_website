@@ -23,20 +23,20 @@ class Projects {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
+    final Map<String, dynamic> data = <String, dynamic>{};
     if(mobile != null) {
-      _data["mobile"] = mobile?.map((e) => e.toJson()).toList();
+      data["mobile"] = mobile?.map((e) => e.toJson()).toList();
     }
     if(web != null) {
-      _data["web"] = web?.map((e) => e.toJson()).toList();
+      data["web"] = web?.map((e) => e.toJson()).toList();
     }
     if(desktop != null) {
-      _data["Desktop"] = desktop?.map((e) => e.toJson()).toList();
+      data["Desktop"] = desktop?.map((e) => e.toJson()).toList();
     }
     if(uiUx != null) {
-      _data["UI_UX"] = uiUx?.map((e) => e.toJson()).toList();
+      data["UI_UX"] = uiUx?.map((e) => e.toJson()).toList();
     }
-    return _data;
+    return data;
   }
 }
 
@@ -68,13 +68,13 @@ class UiUx {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["banners"] = banners;
-    _data["icons"] = icons;
-    _data["titles"] = titles;
-    _data["description"] = description;
-    _data["links"] = links;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["banners"] = banners;
+    data["icons"] = icons;
+    data["titles"] = titles;
+    data["description"] = description;
+    data["links"] = links;
+    return data;
   }
 }
 
@@ -106,13 +106,13 @@ class Desktop {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["banners"] = banners;
-    _data["icons"] = icons;
-    _data["titles"] = titles;
-    _data["description"] = description;
-    _data["links"] = links;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["banners"] = banners;
+    data["icons"] = icons;
+    data["titles"] = titles;
+    data["description"] = description;
+    data["links"] = links;
+    return data;
   }
 }
 
@@ -144,13 +144,13 @@ class Web {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["banners"] = banners;
-    _data["icons"] = icons;
-    _data["titles"] = titles;
-    _data["description"] = description;
-    _data["links"] = links;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["banners"] = banners;
+    data["icons"] = icons;
+    data["titles"] = titles;
+    data["description"] = description;
+    data["links"] = links;
+    return data;
   }
 }
 
@@ -182,12 +182,12 @@ class Mobile {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["banners"] = banners;
-    _data["icons"] = icons;
-    _data["titles"] = titles;
-    _data["description"] = description;
-    _data["links"] = links;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["banners"] = banners;
+    data["icons"] = icons;
+    data["titles"] = titles;
+    data["description"] = description;
+    data["links"] = links;
+    return data;
   }
 }

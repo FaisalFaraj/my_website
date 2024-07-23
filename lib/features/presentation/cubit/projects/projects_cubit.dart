@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:my_portfolio/features/data/models/meta.dart';
 import 'package:my_portfolio/features/data/models/projects.dart';
 import 'package:my_portfolio/features/domain/repositories/general_repository/general_repository.dart';
 

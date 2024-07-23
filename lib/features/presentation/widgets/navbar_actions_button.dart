@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/animations/entrance_fader.dart';
-import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/constant/colors.dart';
 import 'package:my_portfolio/core/providers/scroll_provider.dart';
+import 'package:my_portfolio/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 class NavBarActionButton extends StatefulWidget {
   final String label;
   final int index;
   const NavBarActionButton({
-    Key? key,
+    super.key,
     required this.label,
     required this.index,
-  }) : super(key: key);
+  });
 
   @override
   State<NavBarActionButton> createState() => _NavBarActionButtonState();
